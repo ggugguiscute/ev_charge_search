@@ -39,9 +39,21 @@
           <p>Powered by MongProject - Developed By Marshall</p>
         </div>
       </footer>
+
+      <div class="loading-wrapper">
+        <div class="loading-spinner"></div>
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=37f939f0ecb0f31aad6786f750f8f385"></script>
+    <script src="/ev_charge/js/crtPos.js"></script>
     <script src="/ev_charge/js/getCrtLists.js"></script>
+
+    <script>
+      $(document).ajaxComplete(function () {
+        $(".loading-wrapper").fadeOut();
+      });
+    </script>
   </body>
 </html>
